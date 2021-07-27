@@ -58,7 +58,7 @@ public class Perro extends Animal{
     @Override
     public String toString() {
         return "Animal Perro: " + "de la familia de los " + familia 
-        +"\n"+super.toString();
+        +super.toString();
     }
     
     
