@@ -10,8 +10,10 @@ package tp11_ej02.entidades;
  * 
  * @author Adrian E. Camus
  */
-public class Caballo {
+public class Caballo extends Animal {
 
+    String familia;
+    
     
     
 }
