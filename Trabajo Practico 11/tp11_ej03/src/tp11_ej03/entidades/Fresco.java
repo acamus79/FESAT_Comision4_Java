@@ -16,8 +16,8 @@ import java.time.LocalDate;
  */
 public class Fresco extends Producto {
 
-    LocalDate fechaEnvasado;
-    String paisOrigen;
+    private LocalDate fechaEnvasado;
+    private String paisOrigen;
 
     public Fresco() {
     }
@@ -44,22 +44,27 @@ public class Fresco extends Producto {
         this.paisOrigen = paisOrigen;
     }
 
+    @Override
     public LocalDate getDate() {
         return date;
     }
 
+    @Override
     public void setDate(LocalDate date) {
         this.date = date;
     }
 
+    @Override
     public long getNroLote() {
         return nroLote;
     }
 
+    @Override
     public void setNroLote(long nroLote) {
         this.nroLote = nroLote;
     }
 
+   
     @Override
     public String toString() {
         return "Producto Fresco\n"
