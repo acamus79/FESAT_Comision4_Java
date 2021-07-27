@@ -59,6 +59,12 @@ public class Caballo extends Animal {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+    @Override
+    public String toString() {
+        return "Animal Perro: " + "de la familia de los " + familia 
+        +"\n"+super.toString();
+    }
     
     
     
