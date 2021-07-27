@@ -10,6 +10,51 @@ package tp11_ej02.entidades;
  * 
  * @author Adrian E. Camus
  */
-public class Perro {
+public class Perro extends Animal{
+    
+    String familia;
+
+    public Perro(String familia) {
+        this.familia = familia;
+    }
+
+    public Perro(String familia, String nombre, String tipoDeAlimentacion, int edad) {
+        super(nombre, tipoDeAlimentacion, edad);
+        this.familia = familia;
+    }
+
+    public String getFamilia() {
+        return familia;
+    }
+
+    public void setFamilia(String familia) {
+        this.familia = familia;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTipoDeAlimentacion() {
+        return tipoDeAlimentacion;
+    }
+
+    public void setTipoDeAlimentacion(String tipoDeAlimentacion) {
+        this.tipoDeAlimentacion = tipoDeAlimentacion;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    
+    
 
 }

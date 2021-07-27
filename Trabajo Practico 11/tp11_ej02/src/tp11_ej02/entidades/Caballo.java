@@ -12,7 +12,53 @@ package tp11_ej02.entidades;
  */
 public class Caballo extends Animal {
 
-    String familia;
+    private String familia;
+
+    public Caballo() {
+    }
+
+    public Caballo(String familia) {
+        this.familia = familia;
+    }
+
+    public Caballo(String familia, String nombre, String tipoDeAlimentacion, int edad) {
+        super(nombre, tipoDeAlimentacion, edad);
+        this.familia = familia;
+    }
+
+   
+
+    public String getFamilia() {
+        return familia;
+    }
+
+    public void setFamilia(String familia) {
+        this.familia = familia;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTipoDeAlimentacion() {
+        return tipoDeAlimentacion;
+    }
+
+    public void setTipoDeAlimentacion(String tipoDeAlimentacion) {
+        this.tipoDeAlimentacion = tipoDeAlimentacion;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
     
     
     
