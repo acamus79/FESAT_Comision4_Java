@@ -50,7 +50,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "\nNombre: " + nombre + "\nAlimentacion: " + tipoDeAlimentacion + "\nEdad: " + edad;
+        return "\nNombre: " + nombre + "\nAlimentacion: " + tipoDeAlimentacion + "\nEdad: " + edad +" años";
     }
     
     
