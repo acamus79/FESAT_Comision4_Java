@@ -6,16 +6,16 @@
 Los productos frescos deben llevar la fecha de envasado y el país de origen.
 
  */
-
 package tp11_ej03.entidades;
 
 import java.time.LocalDate;
 
 /**
- * 
+ *
  * @author Adrian E. Camus
  */
-public class Fresco extends Producto{
+public class Fresco extends Producto {
+
     LocalDate fechaEnvasado;
     String paisOrigen;
 
@@ -62,12 +62,10 @@ public class Fresco extends Producto{
 
     @Override
     public String toString() {
-        return "Producto Fresco\n" 
+        return "Producto Fresco\n"
                 + super.toString()
-                + "\nFecha de Envasado: " + fechaEnvasado 
+                + "\nFecha de Envasado: " + fechaEnvasado
                 + "\nPais de Origen: " + paisOrigen;
     }
-    
-    
 
 }
