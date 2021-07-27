@@ -49,13 +49,6 @@ public class Tp11_ej02 {
         System.out.println(p1);
         
         
-        
-        
-        
-        
-        
-        
-        
     }
 
 }
