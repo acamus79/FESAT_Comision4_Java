@@ -56,13 +56,13 @@ public class Congelado extends Producto {
     }
 
     @Override
-    public LocalDate getDate() {
-        return date;
+    public LocalDate getFechaCaducidad() {
+        return fechaCaducidad;
     }
 
     @Override
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setFechaCaducidad(LocalDate date) {
+        this.fechaCaducidad = date;
     }
 
     @Override

@@ -16,23 +16,23 @@ import java.time.LocalDate;
  */
 public class Producto {
 
-    LocalDate date;
+    LocalDate fechaCaducidad;
     long nroLote;
 
     public Producto() {
     }
 
     public Producto(LocalDate date, long nroLote) {
-        this.date = date;
+        this.fechaCaducidad = date;
         this.nroLote = nroLote;
     }
 
-    public LocalDate getDate() {
-        return date;
+    public LocalDate getFechaCaducidad() {
+        return fechaCaducidad;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setFechaCaducidad(LocalDate fechaCaducidad) {
+        this.fechaCaducidad = fechaCaducidad;
     }
 
     public long getNroLote() {
@@ -46,7 +46,7 @@ public class Producto {
     @Override
     public String toString() {
         return "\nNumero de Lote: " + nroLote + "\n"
-                + "Fecha de Elaboracion: " + date;
+                + "Fecha de Elaboracion: " + fechaCaducidad;
                 
     }
 
