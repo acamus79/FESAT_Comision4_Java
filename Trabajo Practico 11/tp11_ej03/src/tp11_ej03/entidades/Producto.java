@@ -37,6 +37,14 @@ public class Producto {
         this.fechaCaducidad = fechaCaducidad;
     }
 
+    public LocalDate getFechaEnvasado() {
+        return fechaEnvasado;
+    }
+
+    public void setFechaEnvasado(LocalDate fechaEnvasado) {
+        this.fechaEnvasado = fechaEnvasado;
+    }
+
     public long getNroLote() {
         return nroLote;
     }
