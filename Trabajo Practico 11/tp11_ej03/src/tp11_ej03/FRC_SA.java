@@ -60,7 +60,7 @@ public class FRC_SA {
         //String paisOrigen, String nombre, String caducidad, String envasado, long nroLote
         Fresco f2 = new Fresco("Argentina", "Papa", "21/08/2021", "10/07/2021", 054476);
         System.out.println(f2);
-        System.out.println("Productos Frescos - Refrigerados");
+        System.out.println("\nProductos Frescos - Refrigerados");
         Refrigerado r1 = sp.crearRefrigerado();
         System.out.println(r1);
         //String codOSA,int tempMante,String paisOrigen,String nombre, String caducidad, String envasado, int nroLote
@@ -70,7 +70,7 @@ public class FRC_SA {
         System.out.println(r3);
 //        Refrigerado r2 = sp.crearRefrigerado();
 //        Refrigerado r3 = sp.crearRefrigerado();
-        System.out.println("Productos Frescos - Refrigerados - Congelados");
+        System.out.println("\nProductos Frescos - Refrigerados - Congelados");
         Congelado c1 = sp.crearCongelado();
         System.out.println(c1);
 //        Congelado c2 = sp.crearCongelado();
