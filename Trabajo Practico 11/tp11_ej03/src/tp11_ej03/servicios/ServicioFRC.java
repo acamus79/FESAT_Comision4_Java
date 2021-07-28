@@ -36,8 +36,7 @@ public class ServicioFRC {
     }
 
     public Fresco crearFresco() {
-        // String paisOrigen, LocalDate fechaCaducidad, LocalDate fechaEnvasado, long
-        // nroLote
+        System.out.println("");
         creaProducto();
         System.out.println("Ingrese el Pais de Origen del producto");
         pais = leer.next();
@@ -45,6 +44,7 @@ public class ServicioFRC {
     }
 
     public Congelado crearCongelado() {
+        System.out.println("");
         crearFresco();
         System.out.println("Ingrese la Temperatura de Mantenimiento");
         temp = leer.nextInt();
@@ -53,6 +53,7 @@ public class ServicioFRC {
     }
 
     public Refrigerado crearRefrigerado() {
+        System.out.println("");
         crearCongelado();
         System.out.println("Ingrese el codigo del organismo de supervisión alimentaria");
         String cod = leer.next();

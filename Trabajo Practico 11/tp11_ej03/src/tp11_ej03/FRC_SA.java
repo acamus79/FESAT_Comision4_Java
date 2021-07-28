@@ -61,6 +61,11 @@ public class FRC_SA {
         System.out.println(f2);
         Refrigerado r1 = sp.crearRefrigerado();
         System.out.println(r1);
+        //String codOSA,int tempMante,String paisOrigen,String nombre, String caducidad, String envasado, int nroLote
+        Refrigerado r2 = new Refrigerado("as2254",8,"Argentina","Crema de Leche","15/09/2021","20/07/2021",54415);
+        System.out.println(r2);
+        Refrigerado r3 = new Refrigerado("as2855",8,"Argentina","Queso Crema","12/09/2021","27/07/2021",548715);
+        System.out.println(r3);
 //        Refrigerado r2 = sp.crearRefrigerado();
 //        Refrigerado r3 = sp.crearRefrigerado();
         Congelado c1 = sp.crearCongelado();
