@@ -45,16 +45,21 @@ public class Servicio_FRC {
         System.out.println("Ingrese el Pais de Origen del producto");
         String pais = leer.next();
         return new Fresco(pais,nom,fechaCadu,fechaEnv,lot);
-
     }
-
+    
     public Congelado crearCongelado() {
-        return null;
+        crearFresco();
+        System.out.println("Ingrese la Temperatura de Mantenimiento");
+        int temp = leer.nextInt();
+        return new Congelado(temp);
 
     }
 
     public Refrigerado crearRefrigerado() {
-        return null;
+        crearCongelado();
+        System.out.println("Ingrese el codigo del organismo de supervisión alimentaria");
+        long cod = leer.nextLong();
+        return new Refrigerado(cod);
 
     }
 }
