@@ -16,7 +16,7 @@ public class Tecnico extends Operario {
     }
 
     public Tecnico(String nombre) {
-        super(nombre);
+        super.setNombre(nombre);
     }
 
     @Override

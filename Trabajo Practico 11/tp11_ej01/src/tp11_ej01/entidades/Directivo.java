@@ -16,7 +16,7 @@ public class Directivo extends Empleado{
     }
 
     public Directivo(String nombre) {
-        super(nombre);
+        super.setNombre(nombre);
     }
 
     @Override

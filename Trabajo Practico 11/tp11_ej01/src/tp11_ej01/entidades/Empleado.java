@@ -12,7 +12,7 @@ package tp11_ej01.entidades;
  */
 public class Empleado {
     
-    String nombre;
+    private String nombre;
 
     public Empleado() {
     }

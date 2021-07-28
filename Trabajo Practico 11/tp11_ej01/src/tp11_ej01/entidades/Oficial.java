@@ -15,7 +15,7 @@ public class Oficial extends Operario {
     }
 
     public Oficial(String nombre) {
-        super(nombre);
+        super.setNombre(nombre);
     }
 
     @Override
