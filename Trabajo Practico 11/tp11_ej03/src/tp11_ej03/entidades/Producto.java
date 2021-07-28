@@ -16,6 +16,7 @@ import java.time.format.DateTimeFormatter;
  * @author Adrian E. Camus
  */
 public class Producto {
+
     String nombre;
     LocalDate fechaCaducidad;
     private LocalDate fechaEnvasado;
@@ -24,14 +25,14 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(String nombre,String caducidad, String envasado, long nroLote) {
+    public Producto(String nombre, String caducidad, String envasado, long nroLote) {
+        this.nombre = nombre;
+        this.nroLote = nroLote;
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         LocalDate fechaCadu = LocalDate.parse(caducidad, dtf);
         LocalDate fechaEnv = LocalDate.parse(envasado, dtf);
-        this.nombre = nombre;
         this.fechaCaducidad = fechaCadu;
         this.fechaEnvasado = fechaEnv;
-        this.nroLote = nroLote;
     }
 
     public LocalDate getFechaCaducidad() {
@@ -66,13 +67,12 @@ public class Producto {
         this.nombre = nombre;
     }
 
-        
     @Override
     public String toString() {
-        return  nombre
+        return nombre
                 + "\nFecha de Envasado: " + fechaEnvasado
                 + "\nFecha de Elaboracion: " + fechaCaducidad
-                +"\nNumero de Lote: " + nroLote;
+                + "\nNumero de Lote: " + nroLote;
 
     }
 
