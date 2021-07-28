@@ -36,8 +36,7 @@ public class Congelado extends Fresco {
 
     @Override
     public String toString() {
-        return "Congelado\n"
-                + super.toString()
+        return super.toString()
                 + "\nTemperatura de Mantenimiento: " + tempMante + " ° C";
     }
 

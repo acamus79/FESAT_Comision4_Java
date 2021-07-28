@@ -33,7 +33,6 @@ frescos, tres productos refrigerados y cinco productos congelados .
 Mostrar la información de cada producto por pantalla.
 
  */
-
 package tp11_ej03;
 
 import tp11_ej03.entidades.Congelado;
@@ -52,30 +51,33 @@ public class FRC_SA {
      */
     public static void main(String[] args) {
         // Aqui va todo el código
-        
-       ServicioFRC sp = new ServicioFRC();
+
+        ServicioFRC sp = new ServicioFRC();
+        System.out.println("Creando productos Frescos");
         Fresco f1 = sp.crearFresco();
         System.out.println(f1);
         //Fresco f2 = sp.crearFresco();
         //String paisOrigen, String nombre, String caducidad, String envasado, long nroLote
-        Fresco f2 = new Fresco("Argentina","Papa","21/08/2021","10/07/2021",054476);
+        Fresco f2 = new Fresco("Argentina", "Papa", "21/08/2021", "10/07/2021", 054476);
         System.out.println(f2);
+        System.out.println("Productos Frescos - Refrigerados");
         Refrigerado r1 = sp.crearRefrigerado();
         System.out.println(r1);
         //String codOSA,int tempMante,String paisOrigen,String nombre, String caducidad, String envasado, int nroLote
-        Refrigerado r2 = new Refrigerado("as2254",8,"Argentina","Crema de Leche","15/09/2021","20/07/2021",54415);
+        Refrigerado r2 = new Refrigerado("as2254", 8, "Argentina", "Crema de Leche", "15/09/2021", "20/07/2021", 54415);
         System.out.println(r2);
-        Refrigerado r3 = new Refrigerado("as2855",8,"Argentina","Queso Crema","12/09/2021","27/07/2021",548715);
+        Refrigerado r3 = new Refrigerado("as2855", 8, "Argentina", "Queso Crema", "12/09/2021", "27/07/2021", 548715);
         System.out.println(r3);
 //        Refrigerado r2 = sp.crearRefrigerado();
 //        Refrigerado r3 = sp.crearRefrigerado();
+        System.out.println("Productos Frescos - Refrigerados - Congelados");
         Congelado c1 = sp.crearCongelado();
         System.out.println(c1);
 //        Congelado c2 = sp.crearCongelado();
 //        Congelado c3 = sp.crearCongelado();
 //        Congelado c4 = sp.crearCongelado();
 //        Congelado c5 = sp.crearCongelado();
-        
+
     }
 
 }

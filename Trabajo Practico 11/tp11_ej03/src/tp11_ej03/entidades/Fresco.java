@@ -34,7 +34,7 @@ public class Fresco extends Producto {
 
     @Override
     public String toString() {
-        return "Producto Fresco\n"
+        return "Producto\n"
                 + super.toString()
                 + "\nPais de Origen: " + paisOrigen;
     }

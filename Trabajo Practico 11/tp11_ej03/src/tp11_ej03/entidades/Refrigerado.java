@@ -36,8 +36,7 @@ public class Refrigerado extends Congelado {
 
     @Override
     public String toString() {
-        return "Refrigerado\n"
-                + super.toString()
+        return super.toString()
                 + "\nCodigo O.S.Alim: " + codOSA;
     }
 
