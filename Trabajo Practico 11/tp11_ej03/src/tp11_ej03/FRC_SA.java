@@ -35,13 +35,16 @@ Mostrar la información de cada producto por pantalla.
 
 package tp11_ej03;
 
+import tp11_ej03.entidades.Congelado;
 import tp11_ej03.entidades.Fresco;
+import tp11_ej03.entidades.Refrigerado;
+import tp11_ej03.servicios.ServicioFRC;
 
 /**
  *
  * @author Adrian E. Camus
  */
-public class Productos_FRC {
+public class FRC_SA {
 
     /**
      * @param args the command line arguments
@@ -49,9 +52,17 @@ public class Productos_FRC {
     public static void main(String[] args) {
         // Aqui va todo el código
         
-        Fresco f1 = new Fresco();
-        
-        
+        ServicioFRC sp = new ServicioFRC();
+        Fresco f1 = sp.crearFresco();
+        Fresco f2 = sp.crearFresco();
+        Refrigerado r1 = sp.crearRefrigerado();
+        Refrigerado r2 = sp.crearRefrigerado();
+        Refrigerado r3 = sp.crearRefrigerado();
+        Congelado c1 = sp.crearCongelado();
+        Congelado c2 = sp.crearCongelado();
+        Congelado c3 = sp.crearCongelado();
+        Congelado c4 = sp.crearCongelado();
+        Congelado c5 = sp.crearCongelado();
         
     }
 

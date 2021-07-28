@@ -16,7 +16,7 @@ import tp11_ej03.entidades.Refrigerado;
  *
  * @author Adrian E. Camus
  */
-public class Servicio_FRC {
+public class ServicioFRC {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
