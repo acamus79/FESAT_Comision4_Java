@@ -52,22 +52,23 @@ public class FRC_SA {
     public static void main(String[] args) {
         // Aqui va todo el código
         
-        ServicioFRC sp = new ServicioFRC();
+       ServicioFRC sp = new ServicioFRC();
         Fresco f1 = sp.crearFresco();
         System.out.println(f1);
         //Fresco f2 = sp.crearFresco();
-        //String paisOrigen,String nombre, LocalDate fechaCaducidad, LocalDate fechaEnvasado, long nroLote
-        Fresco f2 = new Fresco("Argentina","")
+        //String paisOrigen, String nombre, String caducidad, String envasado, long nroLote
+        Fresco f2 = new Fresco("Argentina","Papa","21/08/2021","10/07/2021",054476);
         System.out.println(f2);
         Refrigerado r1 = sp.crearRefrigerado();
         System.out.println(r1);
-        Refrigerado r2 = sp.crearRefrigerado();
-        Refrigerado r3 = sp.crearRefrigerado();
+//        Refrigerado r2 = sp.crearRefrigerado();
+//        Refrigerado r3 = sp.crearRefrigerado();
         Congelado c1 = sp.crearCongelado();
-        Congelado c2 = sp.crearCongelado();
-        Congelado c3 = sp.crearCongelado();
-        Congelado c4 = sp.crearCongelado();
-        Congelado c5 = sp.crearCongelado();
+        System.out.println(c1);
+//        Congelado c2 = sp.crearCongelado();
+//        Congelado c3 = sp.crearCongelado();
+//        Congelado c4 = sp.crearCongelado();
+//        Congelado c5 = sp.crearCongelado();
         
     }
 
