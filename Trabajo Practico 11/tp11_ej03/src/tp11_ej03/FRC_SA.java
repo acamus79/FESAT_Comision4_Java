@@ -55,9 +55,12 @@ public class FRC_SA {
         ServicioFRC sp = new ServicioFRC();
         Fresco f1 = sp.crearFresco();
         System.out.println(f1);
-        Fresco f2 = sp.crearFresco();
+        //Fresco f2 = sp.crearFresco();
+        //String paisOrigen,String nombre, LocalDate fechaCaducidad, LocalDate fechaEnvasado, long nroLote
+        Fresco f2 = new Fresco("Argentina","")
         System.out.println(f2);
         Refrigerado r1 = sp.crearRefrigerado();
+        System.out.println(r1);
         Refrigerado r2 = sp.crearRefrigerado();
         Refrigerado r3 = sp.crearRefrigerado();
         Congelado c1 = sp.crearCongelado();

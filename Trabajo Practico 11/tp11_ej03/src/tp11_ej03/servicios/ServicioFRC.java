@@ -19,10 +19,10 @@ import tp11_ej03.entidades.Refrigerado;
 public class ServicioFRC {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+    
     private String nom;
-    LocalDate fechaCadu;
-    LocalDate fechaEnv;
+    private String cadu;
+    private String env;
     private long lot;
     
     
@@ -30,11 +30,9 @@ public class ServicioFRC {
         System.out.println("\nIngrese el nombre del producto");
         nom = leer.next();
         System.out.println("Ingrese fecha de Vencimiento dd/MM/aaaa");
-        String cadu = leer.next();
-        fechaCadu = LocalDate.parse(cadu, dtf);
+        cadu = leer.next();
         System.out.println("Ingresa la fecha de envasado dd/MM/aaaa");
-        String env = leer.next();
-        fechaEnv = LocalDate.parse(env, dtf);
+        env = leer.next();
         System.out.println("Ingrese el numero de Lote");
         lot = leer.nextLong();
     }
@@ -44,7 +42,7 @@ public class ServicioFRC {
         creaProducto();
         System.out.println("Ingrese el Pais de Origen del producto");
         String pais = leer.next();
-        return new Fresco(pais,nom,fechaCadu,fechaEnv,lot);
+        return new Fresco(pais,nom,cadu,env,lot);
     }
     
     public Congelado crearCongelado() {
