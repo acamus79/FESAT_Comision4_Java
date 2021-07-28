@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="tp11_ej03.entidades">
+  <ClassDiagramComponents>
+    <Class name="Congelado" package="tp11_ej03.entidades" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="fechaEnvasado" type="LocalDate" visibility="private"/>
+        <Field name="paisOrigen" type="String" visibility="private"/>
+        <Field name="tempMante" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="LocalDate" name="fechaEnvasado"/>
+          <Argument type="String" name="paisOrigen"/>
+          <Argument type="int" name="tempMante"/>
+          <Argument type="LocalDate" name="date"/>
+          <Argument type="long" name="nroLote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFechaEnvasado" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaEnvasado" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaEnvasado"/>
+        </Method>
+        <Method name="getPaisOrigen" returnType="String" visibility="public"/>
+        <Method name="setPaisOrigen" returnType="void" visibility="public">
+          <Argument type="String" name="paisOrigen"/>
+        </Method>
+        <Method name="getTempMante" returnType="int" visibility="public"/>
+        <Method name="setTempMante" returnType="void" visibility="public">
+          <Argument type="int" name="tempMante"/>
+        </Method>
+        <Method name="getFechaCaducidad" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaCaducidad" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="date"/>
+        </Method>
+        <Method name="getNroLote" returnType="long" visibility="public"/>
+        <Method name="setNroLote" returnType="void" visibility="public">
+          <Argument type="long" name="nroLote"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Fresco" package="tp11_ej03.entidades" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="fechaEnvasado" type="LocalDate" visibility="private"/>
+        <Field name="paisOrigen" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="LocalDate" name="fechaEnvasado"/>
+          <Argument type="String" name="paisOrigen"/>
+          <Argument type="LocalDate" name="date"/>
+          <Argument type="long" name="nroLote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFechaEnvasado" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaEnvasado" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaEnvasado"/>
+        </Method>
+        <Method name="getPaisOrigen" returnType="String" visibility="public"/>
+        <Method name="setPaisOrigen" returnType="void" visibility="public">
+          <Argument type="String" name="paisOrigen"/>
+        </Method>
+        <Method name="getFechaCaducidad" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaCaducidad" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="date"/>
+        </Method>
+        <Method name="getNroLote" returnType="long" visibility="public"/>
+        <Method name="setNroLote" returnType="void" visibility="public">
+          <Argument type="long" name="nroLote"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Producto" package="tp11_ej03.entidades" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="fechaCaducidad" type="LocalDate" visibility="package"/>
+        <Field name="nroLote" type="long" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="LocalDate" name="date"/>
+          <Argument type="long" name="nroLote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFechaCaducidad" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaCaducidad" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaCaducidad"/>
+        </Method>
+        <Method name="getNroLote" returnType="long" visibility="public"/>
+        <Method name="setNroLote" returnType="void" visibility="public">
+          <Argument type="long" name="nroLote"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Refrigerado" package="tp11_ej03.entidades" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="codOSA" type="long" visibility="private"/>
+        <Field name="fechaEnvasado" type="LocalDate" visibility="private"/>
+        <Field name="tempMante" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="long" name="codOSA"/>
+          <Argument type="LocalDate" name="fechaEnvasado"/>
+          <Argument type="int" name="tempMante"/>
+          <Argument type="LocalDate" name="date"/>
+          <Argument type="long" name="nroLote"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCodOSA" returnType="long" visibility="public"/>
+        <Method name="setCodOSA" returnType="void" visibility="public">
+          <Argument type="long" name="codOSA"/>
+        </Method>
+        <Method name="getFechaEnvasado" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaEnvasado" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="fechaEnvasado"/>
+        </Method>
+        <Method name="getTempMante" returnType="int" visibility="public"/>
+        <Method name="setTempMante" returnType="void" visibility="public">
+          <Argument type="int" name="tempMante"/>
+        </Method>
+        <Method name="getFechaCaducidad" returnType="LocalDate" visibility="public"/>
+        <Method name="setFechaCaducidad" returnType="void" visibility="public">
+          <Argument type="LocalDate" name="date"/>
+        </Method>
+        <Method name="getNroLote" returnType="long" visibility="public"/>
+        <Method name="setNroLote" returnType="void" visibility="public">
+          <Argument type="long" name="nroLote"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="tp11_ej03.entidades.Fresco" target="tp11_ej03.entidades.Producto"/>
+    <IsRelation name="is" source="tp11_ej03.entidades.Congelado" target="tp11_ej03.entidades.Producto"/>
+    <IsRelation name="is" source="tp11_ej03.entidades.Refrigerado" target="tp11_ej03.entidades.Producto"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
