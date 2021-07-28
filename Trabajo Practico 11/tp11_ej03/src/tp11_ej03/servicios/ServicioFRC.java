@@ -27,7 +27,7 @@ public class ServicioFRC {
     
     
     private void creaProducto() {
-        System.out.println("Ingrese el nombre del producto");
+        System.out.println("\nIngrese el nombre del producto");
         nom = leer.next();
         System.out.println("Ingrese fecha de Vencimiento dd/MM/aaaa");
         String cadu = leer.next();

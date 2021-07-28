@@ -54,7 +54,9 @@ public class FRC_SA {
         
         ServicioFRC sp = new ServicioFRC();
         Fresco f1 = sp.crearFresco();
+        System.out.println(f1);
         Fresco f2 = sp.crearFresco();
+        System.out.println(f2);
         Refrigerado r1 = sp.crearRefrigerado();
         Refrigerado r2 = sp.crearRefrigerado();
         Refrigerado r3 = sp.crearRefrigerado();

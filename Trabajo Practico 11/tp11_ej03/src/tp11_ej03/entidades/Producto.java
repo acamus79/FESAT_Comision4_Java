@@ -65,9 +65,10 @@ public class Producto {
         
     @Override
     public String toString() {
-        return "\nNumero de Lote: " + nroLote + "\n"
-                + "Fecha de Envasado: " + fechaEnvasado
-                + "Fecha de Elaboracion: " + fechaCaducidad;
+        return  nombre
+                + "\nFecha de Envasado: " + fechaEnvasado
+                + "\nFecha de Elaboracion: " + fechaCaducidad
+                +"\nNumero de Lote: " + nroLote;
 
     }
 
