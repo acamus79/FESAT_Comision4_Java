@@ -9,8 +9,6 @@ país de origen y la temperatura de mantenimiento recomendada.
  */
 package tp11_ej03.entidades;
 
-import java.time.LocalDate;
-
 /**
  *
  * @author Adrian E. Camus
@@ -22,10 +20,10 @@ public class Congelado extends Fresco {
     public Congelado() {
     }
 
-    public Congelado(int tempMante,String paisOrigen,String nombre, String caducidad, String envasado, int nroLote) {
-        super(paisOrigen,nombre, caducidad, envasado, nroLote);
+    public Congelado(int tempMante, String paisOrigen, String nombre, String caducidad, String envasado, int nroLote) {
+        super(paisOrigen, nombre, caducidad, envasado, nroLote);
         this.tempMante = tempMante;
-        
+
     }
 
     public int getTempMante() {
@@ -34,26 +32,6 @@ public class Congelado extends Fresco {
 
     public void setTempMante(int tempMante) {
         this.tempMante = tempMante;
-    }
-
-    @Override
-    public LocalDate getFechaCaducidad() {
-        return fechaCaducidad;
-    }
-
-    @Override
-    public void setFechaCaducidad(LocalDate fechaCaducidad) {
-        this.fechaCaducidad = fechaCaducidad;
-    }
-
-    @Override
-    public int getNroLote() {
-        return nroLote;
-    }
-
-    @Override
-    public void setNroLote(int nroLote) {
-        this.nroLote = nroLote;
     }
 
     @Override

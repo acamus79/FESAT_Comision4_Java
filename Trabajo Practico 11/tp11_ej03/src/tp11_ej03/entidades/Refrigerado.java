@@ -10,8 +10,6 @@ recomendada y el país de origen.
  */
 package tp11_ej03.entidades;
 
-import java.time.LocalDate;
-
 /**
  *
  * @author Adrian E. Camus
@@ -34,26 +32,6 @@ public class Refrigerado extends Congelado {
 
     public void setCodOSA(String codOSA) {
         this.codOSA = codOSA;
-    }
-
-    @Override
-    public LocalDate getFechaCaducidad() {
-        return fechaCaducidad;
-    }
-
-    @Override
-    public void setFechaCaducidad(LocalDate fechaCaducidad) {
-        this.fechaCaducidad = fechaCaducidad;
-    }
-
-    @Override
-    public int getNroLote() {
-        return nroLote;
-    }
-
-    @Override
-    public void setNroLote(int nroLote) {
-        this.nroLote = nroLote;
     }
 
     @Override

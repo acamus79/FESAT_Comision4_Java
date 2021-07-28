@@ -52,7 +52,7 @@ public class FRC_SA {
     public static void main(String[] args) {
         // Aqui va todo el código
         
-        ServicioFRC sp = new ServicioFRC();
+       ServicioFRC sp = new ServicioFRC();
         Fresco f1 = sp.crearFresco();
         System.out.println(f1);
         //Fresco f2 = sp.crearFresco();
