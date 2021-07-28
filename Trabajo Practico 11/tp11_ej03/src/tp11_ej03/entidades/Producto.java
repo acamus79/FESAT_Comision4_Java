@@ -9,6 +9,7 @@ de lote. A su vez, cada tipo de producto lleva alguna información específica.
 package tp11_ej03.entidades;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 /**
  *
@@ -23,10 +24,13 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(String nombre,LocalDate fechaCaducidad, LocalDate fechaEnvasado, long nroLote) {
+    public Producto(String nombre,String caducidad, String envasado, long nroLote) {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate fechaCadu = LocalDate.parse(caducidad, dtf);
+        LocalDate fechaEnv = LocalDate.parse(envasado, dtf);
         this.nombre = nombre;
-        this.fechaCaducidad = fechaCaducidad;
-        this.fechaEnvasado = fechaEnvasado;
+        this.fechaCaducidad = fechaCadu;
+        this.fechaEnvasado = fechaEnv;
         this.nroLote = nroLote;
     }
 
