@@ -22,8 +22,38 @@ public class Congelado extends Fresco {
     public Congelado() {
     }
 
-    
-    
+    public Congelado(int tempMante) {
+        this.tempMante = tempMante;
+    }
+
+    public int getTempMante() {
+        return tempMante;
+    }
+
+    public void setTempMante(int tempMante) {
+        this.tempMante = tempMante;
+    }
+
+    @Override
+    public LocalDate getFechaCaducidad() {
+        return fechaCaducidad;
+    }
+
+    @Override
+    public void setFechaCaducidad(LocalDate fechaCaducidad) {
+        this.fechaCaducidad = fechaCaducidad;
+    }
+
+    @Override
+    public long getNroLote() {
+        return nroLote;
+    }
+
+    @Override
+    public void setNroLote(long nroLote) {
+        this.nroLote = nroLote;
+    }
+
     @Override
     public String toString() {
         return "Congelado\n"

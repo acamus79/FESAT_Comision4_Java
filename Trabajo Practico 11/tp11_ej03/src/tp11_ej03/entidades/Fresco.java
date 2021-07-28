@@ -8,6 +8,8 @@ Los productos frescos deben llevar la fecha de envasado y el país de origen.
  */
 package tp11_ej03.entidades;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Adrian E. Camus
@@ -19,6 +21,38 @@ public class Fresco extends Producto {
     public Fresco() {
     }
 
+    public Fresco(String paisOrigen, LocalDate fechaCaducidad, LocalDate fechaEnvasado, long nroLote) {
+        super(fechaCaducidad, fechaEnvasado, nroLote);
+        this.paisOrigen = paisOrigen;
+    }
+
+    public String getPaisOrigen() {
+        return paisOrigen;
+    }
+
+    public void setPaisOrigen(String paisOrigen) {
+        this.paisOrigen = paisOrigen;
+    }
+
+    @Override
+    public LocalDate getFechaCaducidad() {
+        return fechaCaducidad;
+    }
+
+    @Override
+    public void setFechaCaducidad(LocalDate fechaCaducidad) {
+        this.fechaCaducidad = fechaCaducidad;
+    }
+
+    @Override
+    public long getNroLote() {
+        return nroLote;
+    }
+
+    @Override
+    public void setNroLote(long nroLote) {
+        this.nroLote = nroLote;
+    }
     
     @Override
     public String toString() {
