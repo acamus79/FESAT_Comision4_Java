@@ -22,8 +22,10 @@ public class Congelado extends Fresco {
     public Congelado() {
     }
 
-    public Congelado(int tempMante) {
+    public Congelado(int tempMante,String paisOrigen,String nombre, String caducidad, String envasado, int nroLote) {
+        super(paisOrigen,nombre, caducidad, envasado, nroLote);
         this.tempMante = tempMante;
+        
     }
 
     public int getTempMante() {
@@ -45,12 +47,12 @@ public class Congelado extends Fresco {
     }
 
     @Override
-    public long getNroLote() {
+    public int getNroLote() {
         return nroLote;
     }
 
     @Override
-    public void setNroLote(long nroLote) {
+    public void setNroLote(int nroLote) {
         this.nroLote = nroLote;
     }
 

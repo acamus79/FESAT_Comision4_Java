@@ -21,7 +21,7 @@ public class Fresco extends Producto {
     public Fresco() {
     }
 
-    public Fresco(String paisOrigen, String nombre, String caducidad, String envasado, long nroLote) {
+    public Fresco(String paisOrigen, String nombre, String caducidad, String envasado, int nroLote) {
         super(nombre, caducidad, envasado, nroLote);
         this.paisOrigen = paisOrigen;
     }
@@ -47,12 +47,12 @@ public class Fresco extends Producto {
     }
 
     @Override
-    public long getNroLote() {
+    public int getNroLote() {
         return nroLote;
     }
 
     @Override
-    public void setNroLote(long nroLote) {
+    public void setNroLote(int nroLote) {
         this.nroLote = nroLote;
     }
     

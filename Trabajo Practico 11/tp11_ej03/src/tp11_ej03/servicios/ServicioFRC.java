@@ -5,8 +5,6 @@
  */
 package tp11_ej03.servicios;
 
-import java.time.*;
-import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 import tp11_ej03.entidades.Congelado;
 import tp11_ej03.entidades.Fresco;
@@ -19,12 +17,12 @@ import tp11_ej03.entidades.Refrigerado;
 public class ServicioFRC {
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    
+
     private String nom;
     private String cadu;
     private String env;
-    private long lot;
-    
+    private int lot, temp;
+    private String pais;
     
     private void creaProducto() {
         System.out.println("\nIngrese el nombre del producto");
@@ -34,30 +32,31 @@ public class ServicioFRC {
         System.out.println("Ingresa la fecha de envasado dd/MM/aaaa");
         env = leer.next();
         System.out.println("Ingrese el numero de Lote");
-        lot = leer.nextLong();
+        lot = leer.nextInt();
     }
 
     public Fresco crearFresco() {
-        //String paisOrigen, LocalDate fechaCaducidad, LocalDate fechaEnvasado, long nroLote
+        // String paisOrigen, LocalDate fechaCaducidad, LocalDate fechaEnvasado, long
+        // nroLote
         creaProducto();
         System.out.println("Ingrese el Pais de Origen del producto");
-        String pais = leer.next();
-        return new Fresco(pais,nom,cadu,env,lot);
+        pais = leer.next();
+        return new Fresco(pais, nom, cadu, env, lot);
     }
-    
+
     public Congelado crearCongelado() {
         crearFresco();
         System.out.println("Ingrese la Temperatura de Mantenimiento");
-        int temp = leer.nextInt();
-        return new Congelado(temp);
+        temp = leer.nextInt();
+        return new Congelado(temp, pais, nom, cadu, env, lot);
 
     }
 
     public Refrigerado crearRefrigerado() {
         crearCongelado();
         System.out.println("Ingrese el codigo del organismo de supervisión alimentaria");
-        long cod = leer.nextLong();
-        return new Refrigerado(cod);
+        String cod = leer.next();
+        return new Refrigerado(cod, temp, pais, nom, cadu, env, lot);
 
     }
 }
