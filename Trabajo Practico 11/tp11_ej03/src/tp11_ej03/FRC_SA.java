@@ -17,19 +17,20 @@ Los productos refrigerados deben llevar el código del organismo de supervisión
 alimentaria, la fecha de envasado, la temperatura de mantenimiento 
 recomendada y el país de origen.
 
-Los productos congelados deben llevar la fecha de envasado, el
-país de origen y la temperatura de mantenimiento recomendada.
+Los productos congelados deben llevar la fecha de envasado, el país de origen
+y la temperatura de mantenimiento recomendada.
 
 Crear el código de las clases Java implementando una relación de herencia 
 siguiendo estas indicaciones:
-a) En primer lugar realizar un esquema con lápiz y papel donde se
-represente cómo se van a organizar las clases cuando escribamos
-el código. Estudiar los atributos de las clases y trasladar a la
-superclase todo atributo que pueda ser trasladado.
+
+a) En primer lugar realizar un esquema con lápiz y papel donde se represente 
+cómo se van a organizar las clases cuando escribamos el código. 
+Estudiar los atributos de las clases y trasladar a la superclase todo 
+atributo que pueda ser trasladado.
+
 Crear una clase con el método main donde se creen: dos productos
 frescos, tres productos refrigerados y cinco productos congelados .
 Mostrar la información de cada producto por pantalla.
-
 
  */
 
