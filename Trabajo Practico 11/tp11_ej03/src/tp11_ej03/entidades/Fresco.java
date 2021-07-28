@@ -21,8 +21,8 @@ public class Fresco extends Producto {
     public Fresco() {
     }
 
-    public Fresco(String paisOrigen, LocalDate fechaCaducidad, LocalDate fechaEnvasado, long nroLote) {
-        super(fechaCaducidad, fechaEnvasado, nroLote);
+    public Fresco(String paisOrigen,String nombre, LocalDate fechaCaducidad, LocalDate fechaEnvasado, long nroLote) {
+        super(nombre,fechaCaducidad, fechaEnvasado, nroLote);
         this.paisOrigen = paisOrigen;
     }
 
