@@ -17,13 +17,15 @@ import java.time.LocalDate;
 public class Producto {
 
     LocalDate fechaCaducidad;
+    private LocalDate fechaEnvasado;
     long nroLote;
 
     public Producto() {
     }
 
-    public Producto(LocalDate date, long nroLote) {
-        this.fechaCaducidad = date;
+    public Producto(LocalDate fechaCaducidad, LocalDate fechaEnvasado, long nroLote) {
+        this.fechaCaducidad = fechaCaducidad;
+        this.fechaEnvasado = fechaEnvasado;
         this.nroLote = nroLote;
     }
 
@@ -46,8 +48,9 @@ public class Producto {
     @Override
     public String toString() {
         return "\nNumero de Lote: " + nroLote + "\n"
+                + "Fecha de Envasado: " + fechaEnvasado
                 + "Fecha de Elaboracion: " + fechaCaducidad;
-                
+
     }
 
 }
