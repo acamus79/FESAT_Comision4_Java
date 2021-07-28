@@ -19,7 +19,9 @@ public class Perro extends Animal{
     }
 
     public Perro(String familia, String nombre, String tipoDeAlimentacion, int edad) {
-        super(nombre, tipoDeAlimentacion, edad);
+        super.setEdad(edad);
+        super.setNombre(nombre);
+        super.setTipoDeAlimentacion(tipoDeAlimentacion);
         this.familia = familia;
     }
 
@@ -29,30 +31,6 @@ public class Perro extends Animal{
 
     public void setFamilia(String familia) {
         this.familia = familia;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getTipoDeAlimentacion() {
-        return tipoDeAlimentacion;
-    }
-
-    public void setTipoDeAlimentacion(String tipoDeAlimentacion) {
-        this.tipoDeAlimentacion = tipoDeAlimentacion;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
     @Override

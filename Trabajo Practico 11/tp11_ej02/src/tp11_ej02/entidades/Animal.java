@@ -11,9 +11,9 @@ package tp11_ej02.entidades;
  * @author Adrian E. Camus
  */
 public class Animal {
-    String nombre;
-    String tipoDeAlimentacion;
-    int edad;
+    private String nombre;
+    private String tipoDeAlimentacion;
+    private int edad;
 
     public Animal() {
     }
