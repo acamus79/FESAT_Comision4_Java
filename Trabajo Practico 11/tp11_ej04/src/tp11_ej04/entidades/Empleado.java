@@ -12,6 +12,14 @@ Atributos:
 - salario: tipo numérico doble
 - Constructor con y sin parámetros de entrada
 
+- Método que permita mostrar la clasificación según la edad
+de acuerdo al siguiente algoritmo:
+Si edad es menor o igual a 21, Principiante
+Si edad es >=22 y <=35, Intermedio
+Si edad es >35, Senior.-
+- Un método que permita aumentar el salario en un porcentaje que
+sería pasado como parámetro al método.
+
  */
 
 package tp11_ej04.entidades;
@@ -93,6 +101,22 @@ public class Empleado {
         return "Empleado{" + "nombre=" + nombre + ", apellido=" + apellido + ", cedula=" + cedula + ", edad=" + edad + ", casado=" + casado + ", salario=" + salario + '}';
     }
     
-    
+    public void clasificacion (){
+        String clasificacion = new String();
+        
+        if (this.edad >35){
+            clasificacion="Senior";
+        }else if(this.edad>22){
+            clasificacion="Intermedio";
+        }else
+            clasificacion="Principiante";
+                        
+                        
+    }
 
+    public void aumentoSalario(double porcentaje){
+    double nuevoSalario = (this.salario * porcentaje) /100;
+    this.salario = nuevoSalario;    
+    }
+    
 }
