@@ -21,14 +21,14 @@ Si edad es >35, Senior.-
 sería pasado como parámetro al método.
 
  */
-
 package tp11_ej04.entidades;
 
 /**
- * 
+ *
  * @author Adrian E. Camus
  */
 public class Empleado {
+
     private String nombre;
     private String apellido;
     private String cedula;
@@ -100,23 +100,24 @@ public class Empleado {
     public String toString() {
         return "Empleado{" + "nombre=" + nombre + ", apellido=" + apellido + ", cedula=" + cedula + ", edad=" + edad + ", casado=" + casado + ", salario=" + salario + '}';
     }
-    
-    public void clasificacion (){
+
+    public String clasificacion() {
         String clasificacion = new String();
-        
-        if (this.edad >35){
-            clasificacion="Senior";
-        }else if(this.edad>22){
-            clasificacion="Intermedio";
-        }else
-            clasificacion="Principiante";
-                        
-                        
+
+        if (this.edad > 35) {
+            clasificacion = "Senior";
+        } else if (this.edad > 22) {
+            clasificacion = "Intermedio";
+        } else {
+            clasificacion = "Principiante";
+        }
+
+        return clasificacion;
     }
 
-    public void aumentoSalario(double porcentaje){
-    double nuevoSalario = (this.salario * porcentaje) /100;
-    this.salario = nuevoSalario;    
+    public void aumentoSalario(double porcentaje) {
+        double nuevoSalario = (this.salario * porcentaje) / 100;
+        this.salario = nuevoSalario;
     }
-    
+
 }
