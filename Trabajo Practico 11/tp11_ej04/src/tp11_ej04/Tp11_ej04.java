@@ -30,6 +30,7 @@ Atributos:
 - lenguajeDominante: tipo cadena
 Métodos:
 - Constructor con y sin parámetros de entrada.
+
 Para este programa, realizar un menú que permita introducir la
 opción de datos a ambas instancias de clase
 
@@ -49,8 +50,16 @@ public class Tp11_ej04 {
      */
     public static void main(String[] args) {
         // El Código va AQUI!!!
+        int op = 0;
         
-        
+        do{
+            System.out.println("MENU");
+            System.out.println("1 para ingresar un programador");
+            System.out.println("2 para generar un nuevo empleado");
+            
+            
+        }while (op==0);
+                
     }
 
 }
