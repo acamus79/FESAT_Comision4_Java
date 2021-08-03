@@ -58,15 +58,13 @@ public class Operacion {
     }
 
     public void mostrarResultado(){
-        System.out.println(this.numero1+""+this.operacion+""+this.numero2+" = "+this.resultado);
+        System.out.println(this.numero1+" "+this.operacion+" "+this.numero2+" = "+this.resultado);
     }
             
-    
-    
-    
+           
     @Override
     public String toString() {
-        return "Operacion{" + "numero1=" + numero1 + ", numero2=" + numero2 + ", operacion=" + operacion + ", resultado=" + resultado + '}';
+        return numero1 + "" + numero2 + "" + operacion + " = " + resultado;
     }
     
     
