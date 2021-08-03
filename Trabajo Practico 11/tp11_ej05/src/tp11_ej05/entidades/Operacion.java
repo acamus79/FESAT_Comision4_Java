@@ -3,14 +3,14 @@
  * Uso para capacitación
  * 2021 Año de la Prevención y Lucha contra el COVID-19.
  */
-
 package tp11_ej05.entidades;
 
 /**
- * 
+ *
  * @author Adrian E. Camus
  */
 public class Operacion {
+
     private double numero1;
     private double numero2;
     private char operacion;
@@ -57,16 +57,8 @@ public class Operacion {
         this.resultado = resultado;
     }
 
-    public void mostrarResultado(){
-        System.out.println(this.numero1+" "+this.operacion+" "+this.numero2+" = "+this.resultado);
+    public void mostrarResultado() {
+        System.out.println(this.numero1 + " " + this.operacion + " " + this.numero2 + " = " + this.resultado);
     }
-            
-           
-    @Override
-    public String toString() {
-        return numero1 + "" + numero2 + "" + operacion + " = " + resultado;
-    }
-    
-    
 
 }
