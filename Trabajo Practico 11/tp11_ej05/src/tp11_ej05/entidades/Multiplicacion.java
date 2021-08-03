@@ -11,13 +11,13 @@ package tp11_ej05.entidades;
  */
 public class Multiplicacion extends Operacion {
 
-    private final String op = "Multiplicacion";
+    private double producto;
 
-    public Multiplicacion() {
-    }
+    public Multiplicacion(double numero1, double numero2) {
+        super(numero1, numero2, 'x');
+        this.producto = numero1 * numero2;
+        this.setResultado(producto);
 
-    public Multiplicacion(double numero1, double numero2, char operacion) {
-        super(numero1, numero2, operacion);
     }
 
 }
