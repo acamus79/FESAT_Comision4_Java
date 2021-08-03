@@ -12,13 +12,16 @@ package tp11_ej05.entidades;
  */
 public class Suma extends Operacion {
     
-    private final String op = "Suma";
+    private double suma;
 
     public Suma() {
     }
 
-    public Suma(double numero1, double numero2, String operacion) {
-        super(numero1, numero2, operacion);
+    public Suma(double numero1, double numero2) {
+        super(numero1, numero2, '+');
+        this.suma = numero1 + numero2;
+        this.setResultado(suma);
+        
     }
         
 }

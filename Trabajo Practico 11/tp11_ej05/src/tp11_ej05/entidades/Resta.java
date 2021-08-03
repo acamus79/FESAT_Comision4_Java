@@ -16,7 +16,7 @@ public class Resta extends Operacion{
     public Resta() {
     }
 
-    public Resta(double numero1, double numero2, String operacion) {
+    public Resta(double numero1, double numero2, char operacion) {
         super(numero1, numero2, operacion);
     }
     

@@ -16,7 +16,7 @@ private final String op = "Division";
     public Division() {
     }
 
-    public Division(double numero1, double numero2, String operacion) {
+    public Division(double numero1, double numero2, char operacion) {
         super(numero1, numero2, operacion);
     }
 

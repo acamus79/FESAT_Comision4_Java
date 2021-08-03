@@ -17,7 +17,7 @@ package tp11_ej05;
  *
  * @author Adrian E. Camus
  */
-public class Tp11_ej05 {
+public class Calculadora {
 
     /**
      * @param args the command line arguments

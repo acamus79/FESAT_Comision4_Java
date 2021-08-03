@@ -13,23 +13,23 @@ package tp11_ej05.entidades;
 public class Operacion {
     private double numero1;
     private double numero2;
-    private String operacion;
+    private char operacion;
     private double resultado;
 
     public Operacion() {
     }
 
-    public Operacion(double numero1, double numero2, String operacion) {
+    public Operacion(double numero1, double numero2, char operacion) {
         this.numero1 = numero1;
         this.numero2 = numero2;
         this.operacion = operacion;
     }
 
-    public String getOperacion() {
+    public char getOperacion() {
         return operacion;
     }
 
-    public void setOperacion(String operacion) {
+    public void setOperacion(char operacion) {
         this.operacion = operacion;
     }
 
@@ -57,6 +57,13 @@ public class Operacion {
         this.resultado = resultado;
     }
 
+    public void mostrarResultado(){
+        System.out.println(this.numero1+""+this.operacion+""+this.numero2+" = "+this.resultado);
+    }
+            
+    
+    
+    
     @Override
     public String toString() {
         return "Operacion{" + "numero1=" + numero1 + ", numero2=" + numero2 + ", operacion=" + operacion + ", resultado=" + resultado + '}';
