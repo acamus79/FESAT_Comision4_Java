@@ -42,7 +42,7 @@ package tp11_ej04;
  *
  * @author Adrian E. Camus
  */
-public class Tp11_ej04 {
+public class Principal04 {
 
     /**
      * @param args the command line arguments

@@ -52,7 +52,7 @@ public class Programador extends Empleado{
 
     @Override
     public String toString() {
-        return "Programador{" + "lineasDeCodigoPorHora=" + lineasDeCodigoPorHora + ", lenguajeDominante=" + lenguajeDominante + '}';
+        return "Programador :" + "lineas de Codigo por Hora " + lineasDeCodigoPorHora + ", lenguaje Dominante: "+ lenguajeDominante;
     }
     
        
