@@ -40,13 +40,13 @@ public class Menu {
                     sx.crearEmpleado();
                     break;
                 case 2:
-                    System.out.println(sx.e1.toString());
+                    sx.mostrarEmpleado();
                     break;
                 case 3:
                     sx.creaProgramador();
                     break;
                 case 4:
-
+                    sx.mostrarProgramador();
                     break;
                 case 5:
                     System.out.println("CHAU!!  \n");

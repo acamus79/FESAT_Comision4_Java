@@ -52,8 +52,27 @@ public class Programador extends Empleado{
 
     @Override
     public String toString() {
-        return "Programador :" + "lineas de Codigo por Hora " + lineasDeCodigoPorHora + ", lenguaje Dominante: "+ lenguajeDominante;
+        StringBuilder sb = new StringBuilder();
+        String esposa;
+        if (super.isCasado()){
+            esposa = "Si";
+        }else{
+            esposa = "No";
+        }
+        sb.append("Programador: ").append(super.getNombre()).append(" ").append(super.getApellido()).append("\n");
+        sb.append("Cédula: ").append(super.getCedula()).append("\n");
+        sb.append("Edad: ").append(super.getEdad()).append("\n");
+        sb.append("Casado: ").append(esposa).append("\n");
+        sb.append("Sueldo: $ ").append(super.getSalario()).append("\n");
+        sb.append("Lenguaje Dominante: ").append(lenguajeDominante).append("\n");
+        sb.append("Lineas de Codigo por hora: ").append(lineasDeCodigoPorHora).append("\n");
+        sb.append("Clasificación: ").append(super.clasificacion()).append("\n");
+                
+        return sb.toString();
+        
     }
+
+    
     
        
 

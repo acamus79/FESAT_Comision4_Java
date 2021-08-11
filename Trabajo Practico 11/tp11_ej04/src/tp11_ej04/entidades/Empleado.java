@@ -111,17 +111,23 @@ public class Empleado {
     }
 
     public void aumentoSalario(double porcentaje) {
-        double nuevoSalario = (this.salario * porcentaje) / 100;
+        double nuevoSalario = (this.salario * (1+porcentaje/100));
         this.salario = nuevoSalario;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        String esposa;
+        if (this.casado){
+            esposa = "Si";
+        }else{
+            esposa = "No";
+        }
         sb.append("Empleado: ").append(nombre).append(" ").append(apellido).append("\n");
         sb.append("Cédula: ").append(cedula).append("\n");
         sb.append("Edad: ").append(edad).append("\n");
-        sb.append("Casado: ").append(casado).append("\n");
+        sb.append("Casado: ").append(esposa).append("\n");
         sb.append("Sueldo: $ ").append(salario).append("\n");
         sb.append("Clasificación: ").append(clasificacion()).append("\n");
         return sb.toString();
