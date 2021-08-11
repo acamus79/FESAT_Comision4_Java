@@ -101,7 +101,7 @@ public class Empleado {
         return "Empleado{" + "nombre=" + nombre + ", apellido=" + apellido + ", cedula=" + cedula + ", edad=" + edad + ", casado=" + casado + ", salario=" + salario + '}';
     }
 
-    public void clasificacion() {
+    public String clasificacion() {
         String clasificacion = new String();
 
         if (this.edad > 35) {
@@ -111,6 +111,8 @@ public class Empleado {
         } else {
             clasificacion = "Principiante";
         }
+
+        return clasificacion;
     }
 
     public void aumentoSalario(double porcentaje) {
