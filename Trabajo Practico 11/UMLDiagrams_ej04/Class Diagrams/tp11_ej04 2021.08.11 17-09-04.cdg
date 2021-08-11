@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="tp11_ej04">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="tp11_ej04.entidades" visibility="public" xPosition="263.0" yPosition="36.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="cedula" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+        <Field name="casado" type="boolean" visibility="private"/>
+        <Field name="salario" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="cedula"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="boolean" name="casado"/>
+          <Argument type="double" name="salario"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getCedula" returnType="String" visibility="public"/>
+        <Method name="setCedula" returnType="void" visibility="public">
+          <Argument type="String" name="cedula"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="isCasado" returnType="boolean" visibility="public"/>
+        <Method name="setCasado" returnType="void" visibility="public">
+          <Argument type="boolean" name="casado"/>
+        </Method>
+        <Method name="getSalario" returnType="double" visibility="public"/>
+        <Method name="setSalario" returnType="void" visibility="public">
+          <Argument type="double" name="salario"/>
+        </Method>
+        <Method name="clasificacion" returnType="String" visibility="public"/>
+        <Method name="aumentoSalario" returnType="void" visibility="public">
+          <Argument type="double" name="porcentaje"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Programador" package="tp11_ej04.entidades" visibility="public" xPosition="263.0" yPosition="620.0">
+      <Fields>
+        <Field name="lineasDeCodigoPorHora" type="int" visibility="private"/>
+        <Field name="lenguajeDominante" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="lineasDeCodigoPorHora"/>
+          <Argument type="String" name="lenguajeDominante"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="String" name="cedula"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="boolean" name="casado"/>
+          <Argument type="double" name="salario"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getLineasDeCodigoPorHora" returnType="int" visibility="public"/>
+        <Method name="setLineasDeCodigoPorHora" returnType="void" visibility="public">
+          <Argument type="int" name="lineasDeCodigoPorHora"/>
+        </Method>
+        <Method name="getLenguajeDominante" returnType="String" visibility="public"/>
+        <Method name="setLenguajeDominante" returnType="void" visibility="public">
+          <Argument type="String" name="lenguajeDominante"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Principal04" package="tp11_ej04" visibility="public" xPosition="1044.0" yPosition="36.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Menu" package="tp11_ej04.servicios" visibility="public" xPosition="1044.0" yPosition="186.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="private"/>
+        <Field name="sx" type="ServiciosXtech" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="menu" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ServiciosXtech" package="tp11_ej04.servicios" visibility="public" xPosition="1044.0" yPosition="374.0">
+      <Fields>
+        <Field name="leer" type="Scanner" visibility="private"/>
+        <Field name="e1" type="Empleado" visibility="private"/>
+        <Field name="p1" type="Programador" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="crearEmpleado" returnType="void" visibility="public"/>
+        <Method name="creaProgramador" returnType="void" visibility="public"/>
+        <Method name="mostrarEmpleado" returnType="void" visibility="public"/>
+        <Method name="mostrarProgramador" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="sx" source="tp11_ej04.servicios.Menu" target="tp11_ej04.servicios.ServiciosXtech" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="e1" source="tp11_ej04.servicios.ServiciosXtech" target="tp11_ej04.entidades.Empleado" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="p1" source="tp11_ej04.servicios.ServiciosXtech" target="tp11_ej04.entidades.Programador" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="tp11_ej04.entidades.Programador" target="tp11_ej04.entidades.Empleado"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
