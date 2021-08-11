@@ -96,11 +96,6 @@ public class Empleado {
         this.salario = salario;
     }
 
-    @Override
-    public String toString() {
-        return "Empleado{" + "nombre=" + nombre + ", apellido=" + apellido + ", cedula=" + cedula + ", edad=" + edad + ", casado=" + casado + ", salario=" + salario + '}';
-    }
-
     public String clasificacion() {
         String clasificacion = new String();
 
@@ -120,4 +115,19 @@ public class Empleado {
         this.salario = nuevoSalario;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Empleado: ").append(nombre).append(" ").append(apellido).append("\n");
+        sb.append("Cédula: ").append(cedula).append("\n");
+        sb.append("Edad: ").append(edad).append("\n");
+        sb.append("Casado: ").append(casado).append("\n");
+        sb.append("Sueldo: $ ").append(salario).append("\n");
+        sb.append("Clasificación: ").append(clasificacion()).append("\n");
+        return sb.toString();
+    }
+
+    
+    
+    
 }

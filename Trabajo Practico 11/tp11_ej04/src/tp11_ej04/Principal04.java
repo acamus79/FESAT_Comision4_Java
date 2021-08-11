@@ -39,27 +39,21 @@ opción de datos a ambas instancias de clase
 
 package tp11_ej04;
 
+import tp11_ej04.servicios.Menu;
+
 /**
  *
  * @author Adrian E. Camus
  */
-public class Tp11_ej04 {
+public class Principal04 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // El Código va AQUI!!!
-        int op = 0;
-        
-        do{
-            System.out.println("MENU");
-            System.out.println("1 para ingresar un programador");
-            System.out.println("2 para generar un nuevo empleado");
-            
-            
-        }while (op==0);
-                
+        Menu menu = new Menu();
+        menu.menu();
     }
 
 }
