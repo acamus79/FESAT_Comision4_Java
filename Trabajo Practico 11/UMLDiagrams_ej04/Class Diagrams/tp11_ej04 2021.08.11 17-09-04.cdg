@@ -93,7 +93,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Menu" package="tp11_ej04.servicios" visibility="public" xPosition="1044.0" yPosition="186.0">
+    <Class name="Menu" package="tp11_ej04.servicios" visibility="public" xPosition="1061.0" yPosition="154.0">
       <Fields>
         <Field name="leer" type="Scanner" visibility="private"/>
         <Field name="sx" type="ServiciosXtech" visibility="package"/>
