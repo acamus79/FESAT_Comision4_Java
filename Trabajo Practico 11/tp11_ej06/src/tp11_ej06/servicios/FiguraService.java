@@ -61,7 +61,7 @@ public class FiguraService {
     public void menu() {
         int op = 0;
         do {
-            System.out.println("***** F I G U R A S ******");
+            System.out.println("***** F I G U R A S *****");
             System.out.println("** 1. TRIANGULO        **");
             System.out.println("** 2. RECTANGULO       **");
             System.out.println("** 3. CIRCULO          **");
