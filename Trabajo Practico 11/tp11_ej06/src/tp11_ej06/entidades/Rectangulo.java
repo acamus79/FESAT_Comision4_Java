@@ -15,13 +15,13 @@ public class Rectangulo extends Figura {
     private double altura;
 
     public Rectangulo() {
-        super.nombre = "Rectangulo";
+        super.nombre = "RECTANGULO";
     }
 
     public Rectangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
-        super.nombre = "Rectangulo";
+        super.nombre = "RECTANGULO";
     }
 
     public double getBase() {

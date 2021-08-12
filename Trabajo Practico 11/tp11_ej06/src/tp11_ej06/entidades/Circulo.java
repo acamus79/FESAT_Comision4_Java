@@ -14,12 +14,12 @@ public class Circulo extends Figura {
     private double radio;
 
     public Circulo() {
-        super.nombre = "Circulo";
+        super.nombre = "CIRCULO";
     }
 
     public Circulo(double radio) {
         this.radio = radio;
-        super.nombre = "Circulo";
+        super.nombre = "CIRCULO";
     }
 
     public double getRadio() {
