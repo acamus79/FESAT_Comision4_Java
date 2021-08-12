@@ -10,9 +10,22 @@ package tp11_ej06.entidades;
  * @author Adrian E. Camus
  */
 public class Figura {
+   String nombre;
+   double area;
+   double perimetro;
     
-    protected double area;
-    protected double perimetro;
+   public void calculoArea(){
+       
+   }
     
-    
+   public void calculoPerimetro() {
+       
+   }
+
+    @Override
+    public String toString() {
+        return "Figura: " + nombre + "\nPerimetro: " + perimetro + "\nArea: "+area;
+    }
+   
+   
 }
