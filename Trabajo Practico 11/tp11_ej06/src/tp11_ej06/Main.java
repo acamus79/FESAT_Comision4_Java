@@ -15,6 +15,8 @@ CIRCULO     RECTANGULO      TRIANGULO
 
 package tp11_ej06;
 
+import tp11_ej06.servicios.FiguraService;
+
 /**
  *
  * @author Adrian E. Camus
@@ -25,7 +27,11 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Aqui va todo el código
+        
+        FiguraService fs = new FiguraService();
+        fs.menu();
+        
+        
     }
 
 }

@@ -57,13 +57,11 @@ public class Circulo extends Figura {
     @Override
     public void calculoPerimetro() {
         super.perimetro = (2 * Math.PI) * radio;
-        System.out.println("El Perimetro del circulo es: " + super.perimetro + "\n");
     }
 
     @Override
     public void calculoArea() {
         super.area = Math.PI * (radio * radio);
-        System.out.println("El Area del circulo es: " + super.area + "\n");
     }
 
     @Override
@@ -71,5 +69,4 @@ public class Circulo extends Figura {
         return super.toString();
     }
 
-    
 }
