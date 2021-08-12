@@ -15,11 +15,13 @@ public class Rectangulo extends Figura {
     private double altura;
 
     public Rectangulo() {
+        super.nombre = "Rectangulo";
     }
 
     public Rectangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
+        super.nombre = "Rectangulo";
     }
 
     public double getBase() {
@@ -63,13 +65,8 @@ public class Rectangulo extends Figura {
     }
 
     @Override
-    public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
     public void calculoPerimetro() {
-        super.perimetro = (2*base)+(2*altura);
+        super.perimetro = (2 * base) + (2 * altura);
     }
 
     @Override
@@ -77,6 +74,9 @@ public class Rectangulo extends Figura {
         super.area = base * altura;
     }
 
-    
-    
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }

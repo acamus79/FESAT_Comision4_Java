@@ -14,10 +14,12 @@ public class Circulo extends Figura {
     private double radio;
 
     public Circulo() {
+        super.nombre = "Circulo";
     }
 
     public Circulo(double radio) {
         this.radio = radio;
+        super.nombre = "Circulo";
     }
 
     public double getRadio() {
@@ -52,8 +54,6 @@ public class Circulo extends Figura {
         this.perimetro = perimetro;
     }
 
-    
-    
     @Override
     public void calculoPerimetro() {
         super.perimetro = (2 * Math.PI) * radio;
@@ -66,4 +66,10 @@ public class Circulo extends Figura {
         System.out.println("El Area del circulo es: " + super.area + "\n");
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    
 }
