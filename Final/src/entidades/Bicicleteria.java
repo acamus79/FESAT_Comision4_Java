@@ -18,42 +18,53 @@ import java.util.ArrayList;
  * @author Adrian E. Camus
  */
 public class Bicicleteria {
-   private ArrayList<Bicicleta> bibicletas;
-   private float ganancias;
-   private Integer cantVentas;
+
+    private ArrayList<Bicicleta> bibicletas;
+    private float ganancias;
+    private Integer cantVentas;
 
     public Bicicleteria() {
         this.bibicletas = new ArrayList();
         this.cantVentas = 0;
         this.ganancias = 0;
     }
-    
-    public void venderBicicleta(Bicicleta bici){
+
+    public void venderBicicleta(Bicicleta bici) {
         this.bibicletas.remove(bici);
         this.cantVentas++;
         this.ganancias += bici.getPrecio();
     }
-    
-    public void addBicicleta(Bicicleta bici){
+
+    public void addBicicleta(Bicicleta bici) {
         this.bibicletas.add(bici);
     }
-    
-    public Bicicleta buscarBicicleta(String nroDeSerie){
+
+    public Bicicleta buscarBicicleta(String nroDeSerie) {
         Bicicleta bici = new Bicicleta();
         boolean bandera = true;
-        
+
         for (Bicicleta aux : bibicletas) {
-            if(aux.getNroSerie().equals(nroDeSerie)){
-                bici=aux;
+            if (aux.getNroSerie().equals(nroDeSerie)) {
+                bici = aux;
                 bandera = true;
-            }else{
+            } else {
                 bandera = false;
             }
         }
-        if(bandera){
+        if (bandera) {
             return bici;
-        }else return null;
-        
+        } else {
+            return null;
+        }
+
     }
-    
+
+    public float inversionTotal() {
+        float ret = 0;
+        for (int i = 0; i < this.bibicletas.size(); i++) {
+            ret += this.bibicletas.get(i).getPrecio();
+        }
+        return ret;
+    }
+
 }
