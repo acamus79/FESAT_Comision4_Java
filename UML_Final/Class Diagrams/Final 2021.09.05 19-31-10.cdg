@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Final">
   <ClassDiagramComponents>
-    <Class name="Bicicleta" package="entidades" visibility="public" xPosition="139.0" yPosition="214.0">
+    <Class name="Bicicleta" package="entidades" visibility="public" xPosition="20.0" yPosition="20.0">
       <Fields>
         <Field name="nroSerie" type="String" visibility="private"/>
         <Field name="modelo" type="String" visibility="private"/>
@@ -25,7 +25,7 @@
         <Method name="getNroSerie" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Bicicleteria" package="entidades" visibility="public" xPosition="570.0" yPosition="214.0">
+    <Class name="Bicicleteria" package="entidades" visibility="public" xPosition="320.0" yPosition="20.0">
       <Fields>
         <Field name="bibicletas" type="ArrayList&lt;Bicicleta&gt;" visibility="private"/>
         <Field name="ganancias" type="float" visibility="private"/>
@@ -44,9 +44,10 @@
         <Method name="buscarBicicleta" returnType="Bicicleta" visibility="public">
           <Argument type="String" name="nroDeSerie"/>
         </Method>
+        <Method name="inversionTotal" returnType="float" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Main" package="principal" visibility="public" xPosition="63.0" yPosition="21.0">
+    <Class name="Main" package="principal" visibility="public" xPosition="620.0" yPosition="20.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -57,7 +58,7 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <HasRelation name="bibicletas" source="entidades.Bicicleteria" target="entidades.Bicicleta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Bicicleta&gt;"/>
     <UseRelation source="entidades.Bicicleteria" target="entidades.Bicicleta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="bibicletas" source="entidades.Bicicleteria" target="entidades.Bicicleta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Bicicleta&gt;"/>
   </ClassDiagramRelations>
 </ClassDiagram>
