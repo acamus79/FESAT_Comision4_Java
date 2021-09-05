@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Final">
+  <ClassDiagramComponents>
+    <Class name="Bicicleta" package="entidades" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="nroSerie" type="String" visibility="private"/>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+        <Field name="precio" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nroSerie"/>
+          <Argument type="String" name="modelo"/>
+          <Argument type="int" name="anio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPrecio" returnType="float" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="float" name="precio"/>
+        </Method>
+        <Method name="getNroSerie" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Bicicleteria" package="entidades" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="bibicletas" type="ArrayList&lt;Bicicleta&gt;" visibility="private"/>
+        <Field name="ganancias" type="float" visibility="private"/>
+        <Field name="cantVentas" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="venderBicicleta" returnType="void" visibility="public">
+          <Argument type="Bicicleta" name="bici"/>
+        </Method>
+        <Method name="addBicicleta" returnType="void" visibility="public">
+          <Argument type="Bicicleta" name="bici"/>
+        </Method>
+        <Method name="buscarBicicleta" returnType="Bicicleta" visibility="public">
+          <Argument type="String" name="nroDeSerie"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Main" package="principal" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="entidades.Bicicleteria" target="entidades.Bicicleta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="bibicletas" source="entidades.Bicicleteria" target="entidades.Bicicleta" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Bicicleta&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
