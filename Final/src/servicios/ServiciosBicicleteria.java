@@ -59,22 +59,20 @@ public class ServiciosBicicleteria {
 
     private void agregaBici(Bicicleteria bicis) {
         System.out.println("Ingrese en Numero de Serie");
-        String nro = leer.next();
+        String nro = leer.next().toUpperCase();
         System.out.println("Ingrese el Modelo");
-        String mod = leer.next();
+        String mod = leer.next().toUpperCase();
         System.out.println("Ingrese el Año de Fabricacion");
         int anio = leer.nextInt();
         System.out.println("Cual es el precio de venta?");
         float precio = leer.nextFloat();
         Bicicleta b1 = new Bicicleta(nro, mod, anio,precio);
-        System.out.println("Cual es el precio de Venta");
-        b1.setPrecio(leer.nextFloat());
         bicis.addBicicleta(b1);
     }
 
     private void venta(Bicicleteria bicis) {
         System.out.println("Ingrese en Numero de Serie de la Bicicleta");
-        String num = leer.next();
+        String num = leer.next().toUpperCase();
         bicis.venderBicicleta(bicis.buscarBicicleta(num));
     }
 

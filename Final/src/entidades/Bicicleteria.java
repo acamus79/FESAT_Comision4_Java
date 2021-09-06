@@ -44,7 +44,7 @@ public class Bicicleteria {
         boolean bandera = true;
 
         for (Bicicleta aux : bibicletas) {
-            if (aux.getNroSerie().equals(nroDeSerie)) {
+            if (aux.getNroSerie().equalsIgnoreCase(nroDeSerie)) {
                 bici = aux;
                 bandera = true;
             } else {
