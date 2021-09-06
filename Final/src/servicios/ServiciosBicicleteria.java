@@ -18,7 +18,6 @@ public class ServiciosBicicleteria {
 
     public ServiciosBicicleteria() {
         this.leer = new Scanner(System.in).useDelimiter("\n");
-
     }
 
     public void menu(Bicicleteria bicis) {
