@@ -18,10 +18,11 @@ public class Bicicleta {
     public Bicicleta() {
     }
 
-    public Bicicleta(String nroSerie, String modelo, int anio) {
+    public Bicicleta(String nroSerie, String modelo, int anio, float precio) {
         this.nroSerie = nroSerie;
         this.modelo = modelo;
         this.anio = anio;
+        this.precio = precio;
     }
 
     public float getPrecio() {
@@ -36,7 +37,11 @@ public class Bicicleta {
         return nroSerie;
     }
 
+    @Override
+    public String toString() {
+        return "Bicicleta " + modelo + ", año de Fabricacion " + anio + "\nPrecio: $" + precio + "\nNumero de Serie "+nroSerie;
+    }
+
     
     
-            
 }

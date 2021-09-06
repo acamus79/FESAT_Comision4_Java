@@ -67,4 +67,9 @@ public class Bicicleteria {
         return ret;
     }
 
+    public ArrayList<Bicicleta> getBibicletas() {
+        return bibicletas;
+    }
+
+    
 }
