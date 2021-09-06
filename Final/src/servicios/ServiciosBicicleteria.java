@@ -38,7 +38,7 @@ public class ServiciosBicicleteria {
             switch (op)
             {
                 case 1:
-
+                    stock(bicis);
                     break;
                 case 2:
                     agregaBici(bicis);
@@ -47,7 +47,7 @@ public class ServiciosBicicleteria {
                     venta(bicis);
                     break;
                 case 4:
-
+                    System.out.println("EL total vender es: $" + bicis.inversionTotal());
                     break;
                 case 5:
                     System.out.println("CHAU!!!");
@@ -65,20 +65,28 @@ public class ServiciosBicicleteria {
         String mod = leer.next();
         System.out.println("Ingrese el Año de Fabricacion");
         int anio = leer.nextInt();
-        Bicicleta b1 = new Bicicleta(nro, mod, anio);
+        System.out.println("Cual es el precio de venta?");
+        float precio = leer.nextFloat();
+        Bicicleta b1 = new Bicicleta(nro, mod, anio,precio);
         System.out.println("Cual es el precio de Venta");
         b1.setPrecio(leer.nextFloat());
         bicis.addBicicleta(b1);
     }
 
-    private void venta(Bicicleteria bicis){
+    private void venta(Bicicleteria bicis) {
         System.out.println("Ingrese en Numero de Serie de la Bicicleta");
         String num = leer.next();
-        
         bicis.venderBicicleta(bicis.buscarBicicleta(num));
-        
     }
-    
-    
+
+    private void stock(Bicicleteria bicis){
+        
+        System.out.println("STOCK de Bicicletas a la Venta "+bicis.getBibicletas().size());
+        
+        bicis.getBibicletas().forEach(aux ->
+        {
+            System.out.println(aux);
+        });
+    }
     
 }
